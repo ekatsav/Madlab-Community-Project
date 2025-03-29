@@ -50,7 +50,7 @@ html, body {
     border-color: white;
 }
 .btn-primary:hover {
-    background-color: rgba(55, 0, 128, 0.6);
+    background-color: rgba(128, 19, 0, 0.6);
     border-color: white;
 }
 
@@ -59,8 +59,64 @@ html, body {
 }
 
 .jumbotron {
-    border-radius: 0;
-    background-color: rgb(24, 24, 24);
-    margin: 1rem;
+    background-color: rgb(46, 46, 46);
 }
 
+.jumbotron .btn {
+    background-color: black;
+    color: white;
+}
+
+.jumbotron .btn:hover {
+    background-color: rgb(78, 78, 78);
+    color: white;
+}
+
+.jbtinner {
+    padding: 10px;
+    padding-top: 20px;
+}
+
+.welcome {
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+
+.ongoing {
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+
+.padding {
+    padding-bottom: 2rem;
+}
+
+.eventboxes {
+    max-width: 80%;
+}
+
+.card {
+    padding: 1rem;
+    margin: 2vw 1vw;
+    background-color: rgb(194, 194, 194);
+}
+
+.card .btn {
+    background-color: rgb(61, 61, 61);
+    color: white;
+    border-color: black;
+}
+
+.card .btn:hover {
+    background-color: rgba(128, 19, 0, 0.6);
+}
+
+#hideybutton {
+    background-color: rgb(156, 85, 85);
+}
+
+#hideybutton:hover {
+    background-color: brown;
+}
