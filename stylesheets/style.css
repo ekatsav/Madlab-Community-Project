@@ -57,3 +57,10 @@ html, body {
 .btn-outline-light {
     background-color:rgba(0, 0, 0, 0.6);
 }
+
+.jumbotron {
+    border-radius: 0;
+    background-color: rgb(24, 24, 24);
+    margin: 1rem;
+}
+
