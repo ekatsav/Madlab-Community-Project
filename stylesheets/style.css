@@ -120,3 +120,8 @@ html, body {
 #hideybutton:hover {
     background-color: brown;
 }
+
+footer {
+    background-color: rgb(26, 26, 26);
+    margin: 0px 3vw;
+}
