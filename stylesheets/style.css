@@ -29,18 +29,16 @@ html, body {
 }
 
 .carousel-caption {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    
 }
 
 .carousel-caption h1 {
-    font-size: 500%;
+    font-size: clamp(16px, 5vw, 500%);
     text-shadow: 10px 1px 15px black;
 }
 
 .carousel-caption h3 {
-    font-size: 200%;
+    font-size: clamp(12px, 2vw, 200%);
     text-shadow: 10px 1px 10px black;
     padding-bottom: 1rem;
 }
@@ -49,6 +47,7 @@ html, body {
     background-color:rgba(0, 0, 0, 0.6);
     border-color: white;
 }
+
 .btn-primary:hover {
     background-color: rgba(128, 19, 0, 0.6);
     border-color: white;
@@ -56,6 +55,16 @@ html, body {
 
 .btn-outline-light {
     background-color:rgba(0, 0, 0, 0.6);
+}
+
+#btnlightcarousel {
+    font-size: clamp(12px, 2vw, 20px);
+    padding: clamp(8px, 1vw, 14px) clamp(12px, 2vw, 24px);
+}
+
+#btnprimarycarousel {
+    font-size: clamp(12px, 2vw, 20px);
+    padding: clamp(8px, 1vw, 14px) clamp(12px, 2vw, 24px);
 }
 
 .jumbotron {
@@ -119,4 +128,40 @@ html, body {
 
 #hideybutton:hover {
     background-color: brown;
+}
+
+footer {
+    background-color: rgb(26, 26, 26);
+    margin: 0px 3vw;
+}
+
+
+
+
+@media (max-width: 768px) { 
+
+    #carouselExampleCaptions {
+        margin: 0;
+    }
+
+    .carousel-caption {
+        
+        padding: 10px;
+    }
+
+    .carousel-caption h1 {
+        font-size: 24px; 
+    }
+
+    .carousel-caption h3 {
+        font-size: 16px;
+    }
+
+    .carousel-caption .btn {
+        display: block;
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    
 }
