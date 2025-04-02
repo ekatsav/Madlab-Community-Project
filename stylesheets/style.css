@@ -33,6 +33,10 @@ html, body {
     margin-top: 5%;
 }
 
+.heading {
+    margin-top: 10%;
+}
+
 .carousel-caption h1 {
     font-size: clamp(16px, 5vw, 500%);
     text-shadow: 10px 1px 15px black;
