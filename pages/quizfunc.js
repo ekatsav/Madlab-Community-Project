@@ -1,7 +1,13 @@
 function checkAnswers() {
+    let quiz = document.forms.quiz.elements;
+
+    if (!quiz.colour.value || !quiz.animal.value || !quiz.music.value || !quiz.dress.value || !quiz.book.value) {
+        alert("Please answer all questions before submitting!");
+        return;
+    }
+
     let score = 0;
     let result = "";
-    let quiz = document.forms.quiz.elements;
 
     let answer1 = quiz.colour.value;
     if (answer1 === "black") score += 0;

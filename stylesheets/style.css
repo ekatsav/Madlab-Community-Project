@@ -37,6 +37,10 @@ html, body {
     margin-top: 10%;
 }
 
+.eventbox {
+    margin-top: 10%;
+}
+
 .carousel-caption h1 {
     font-size: clamp(16px, 5vw, 500%);
     text-shadow: 10px 1px 15px black;
@@ -140,10 +144,26 @@ footer {
     margin: 0px 3vw;
 }
 
+.imagegal img {
+    transition: transform 0.3s ease;
+}
+.imagegal img:hover {
+    opacity: 70%;
+    transform: scale(1.1);
+}
 
+@media (max-width: 960px) { 
 
+    main {
+        padding-top: 13%;
+    }
+}
 
 @media (max-width: 768px) { 
+
+    main {
+        padding-top: 13%;
+    }
 
     #carouselExampleCaptions {
         margin: 0;
