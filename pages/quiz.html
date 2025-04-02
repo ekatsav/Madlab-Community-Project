@@ -12,13 +12,14 @@
     <title>Quiz</title>
     <link rel="stylesheet" href="..\stylesheets\style.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="quizfunc.js"></script>
 </head>
 
 <body>
 
   <nav class="navbar navbar-expand-md navbar-dark bg-black fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img src="..\images\logocompact.PNG" alt="Manny Goths" width="100px"></a>
+      <a class="navbar-brand" href="../index.html"><img src="..\images\logocompact.PNG" alt="Manny Goths" width="100px"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -74,6 +75,78 @@
   </nav>
 
     <main>
+      <h1 class="heading text-center">What type of goth are you?</h1>
+      <div class="quiz container justify-content-center text-center mt-sm-5 my-1">
+        <form name="quiz">
+        <fieldset>
+            <legend>What is your favourite colour?</legend>
+            <input type="radio" name="colour" id="black" value="black">
+            <label for="black">Black</label>
+            <input type="radio" name="colour" id="white" value="white">
+            <label for="black">White</label>
+            <input type="radio" name="colour" id="red" value="red">
+            <label for="black">Red</label>
+            <input type="radio" name="colour" id="purple" value="purple">
+            <label for="black">Purple</label>
+            <input type="radio" name="colour" id="othercolour" value="othercolour">
+            <label for="black">Other</label>
+        </fieldset>
+        <fieldset>
+            <legend>What is your favourite animal?</legend>
+            <input type="radio" name="animal" id="spider" value="spider">
+            <label for="red-panda">Spider</label>
+            <input type="radio" name="animal" id="cat" value="cat">
+            <label for="giraffe">Cat</label>
+            <input type="radio" name="animal" id="dog" value="dog">
+            <label for="jaguar">Wolf</label>
+            <input type="radio" name="animal" id="bat" value="bat">
+            <label for="gorilla">Bat</label>
+            <input type="radio" name="animal" id="otheranimal" value="otheranimal">
+            <label for="black">Other</label>
+        </fieldset>
+        <fieldset>
+            <legend>What is your favourite music genre?</legend>
+            <input type="radio" name="music" id="gothic" value="gothic">
+            <label for="pop">Gothic</label>
+            <input type="radio" name="music" id="pop" value="pop">
+            <label for="hip-hop">Pop</label>
+            <input type="radio" name="music" id="rock" value="rock">
+            <label for="rock">Rock</label>
+            <input type="radio" name="music" id="metal" value="metal">
+            <label for="metal">Metal</label>
+            <input type="radio" name="music" id="othermusic" value="othermusic">
+            <label for="black">Other</label>
+        </fieldset>
+        <fieldset>
+            <legend>What is your dress style?</legend>
+            <input type="radio" name="dress" id="allblack" value="allblack">
+            <label for="read">All Black</label>
+            <input type="radio" name="dress" id="casual" value="casual">
+            <label for="music">Casual</label>
+            <input type="radio" name="dress" id="edgy" value="edgy">
+            <label for="walk">Edgy</label>
+            <input type="radio" name="dress" id="flowy" value="flowy">
+            <label for="exercise">Flowy</label>
+            <input type="radio" name="dress" id="otherdress" value="otherdress">
+            <label for="black">Other</label>
+        </fieldset>
+        <fieldset>
+          <legend>What is your favourite book genre?</legend>
+          <input type="radio" name="book" id="gothiclit" value="ggothiclit">
+          <label for="read">Gothic Lit</label>
+          <input type="radio" name="book" id="nonfic" value="nonfic">
+          <label for="music">Non-Fiction</label>
+          <input type="radio" name="book" id="horror" value="horror">
+          <label for="walk">Horror</label>
+          <input type="radio" name="book" id="romance" value="romance">
+          <label for="exercise">Romance</label>
+          <input type="radio" name="book" id="otherbook" value="otherbook">
+          <label for="black">Other</label>
+      </fieldset>
+        <br>
+        <button type="button" onclick="checkAnswers()">Submit</button>
+    </form>
+    </section>
 
     </main>
 

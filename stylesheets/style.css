@@ -26,10 +26,15 @@ html, body {
 #carouselExampleCaptions {
     margin-left: 10%;
     margin-right: 10%;
+    margin-top: 1%;
 }
 
-.carousel-caption {
-    
+.py-5 {
+    margin-top: 5%;
+}
+
+.heading {
+    margin-top: 10%;
 }
 
 .carousel-caption h1 {
